@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UNICORE — Class Status</title>
+<meta name="description" content="Check the current status of your teachers.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#f7f7f5">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head><body>
+<div class="wrap">
+  <header class="nav"><a class="brand" href="/"><img src="/logo.svg" alt=""><span class="wordmark">UNI<b>CORE</b></span></a>
+    <button class="btn sm" id="refresh" aria-label="Refresh">↻ Refresh</button></header>
+  <h1>Who's coming to class?</h1>
+  <p class="sub">Check the current status of your teachers.</p>
+  <div class="bar"><input id="q" type="search" placeholder="Search teachers…" aria-label="Search teachers"></div>
+  <div class="chips" id="chips"></div>
+  <p class="meta" id="meta">Loading…</p>
+  <main id="list"><div class="skel"></div><div class="skel"></div><div class="skel"></div></main>
+</div>
+<script src="/js/api.js"></script><script src="/js/ui.js"></script><script src="/js/public.js"></script>
+</body></html>

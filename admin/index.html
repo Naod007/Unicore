@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UNICORE — Admin</title><meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head><body>
+<section class="login hidden" id="login">
+  <a class="brand" href="/" style="margin-bottom:20px"><img src="/logo.svg" alt=""><span class="wordmark">UNI<b>CORE</b></span></a>
+  <form id="loginForm"><h1>Sign in</h1>
+    <input name="username" placeholder="Username" autocomplete="username" required>
+    <input name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+    <div class="err-t" id="loginErr" role="alert"></div>
+    <button class="btn primary" type="submit">Sign in</button></form>
+</section>
+<div class="app hidden" id="app">
+  <nav class="side"><a class="brand" href="/"><img src="/logo.svg" alt=""><span class="wordmark">UNI<b>CORE</b></span></a>
+    <a href="#status">Class Status</a><a href="#teachers">Teachers</a><a href="#statuses">Statuses</a><a href="#settings">Settings</a>
+    <div class="sp"></div><button class="btn" id="logout">Log out</button></nav>
+  <div>
+    <nav class="mobbar"><a href="#status">Class Status</a><a href="#teachers">Teachers</a><a href="#statuses">Statuses</a><a href="#settings">Settings</a></nav>
+    <main class="main" id="view"></main>
+  </div>
+</div>
+<dialog id="dlg"><form id="dlgForm" method="dialog"></form></dialog>
+<script src="/js/api.js"></script><script src="/js/ui.js"></script>
+<script src="/js/auth.js"></script><script src="/js/teachers.js"></script><script src="/js/statuses.js"></script><script src="/js/admin.js"></script>
+</body></html>
